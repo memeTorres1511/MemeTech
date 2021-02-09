@@ -135,6 +135,80 @@ header{
     margin-right: 5px;
 }
 
+.contenedor-somos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-somos img{
+    width: 40%;
+}
+
+.checklist-somos{
+    width: 45%;
+}
+
+.somos{
+    margin-bottom: 20px;
+}
+
+.n-somos{
+    margin-bottom: 7px;
+    color: teal;
+}
+
+.vin{
+    display: inline-block;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.contenedor-faqs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-faqs img{
+    width: 40%;
+}
+
+.checklist-faqs{
+    width: 45%;
+}
+
+.faqs{
+    margin-bottom: 20px;
+}
+
+.n-faqs{
+    margin-bottom: 7px;
+    color: teal;
+}
+
+.vine{
+    display: inline-block;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
 .gallery{
     background: #f2f2f2;
 }
@@ -301,6 +375,32 @@ footer{
     }
 
     .service{
+        margin-bottom: 30px;
+    }
+
+    .contenedor-somos img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-somos{
+        width: 80%;
+    }
+
+    .somos{
+        margin-bottom: 30px;
+    }
+
+    .contenedor-faqs img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-faqs{
+        width: 80%;
+    }
+
+    .faqs{
         margin-bottom: 30px;
     }
 
