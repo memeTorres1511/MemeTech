@@ -59,7 +59,9 @@ header{
     right: 0;
     width: 30vw;
     height: 100%;
-    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    background-image: linear-gradient( 180deg,  rgba(5,84,94,1) 0%, #bbb 100% );
+    /*background-image: -webkit-linear-gradient(180deg, #780206 0%, #061161 100%);*/
+    /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
