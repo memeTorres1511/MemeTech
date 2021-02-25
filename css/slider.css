@@ -30,6 +30,7 @@
     object-fit: cover;
     vertical-align: top;
     transition: 2s;
+    display: block;
 }
 
 .direcciones{
