@@ -11,6 +11,9 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     /* margin: auto; */
 }
 
