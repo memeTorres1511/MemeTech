@@ -45,6 +45,45 @@ img {
 }
 
 /* Estilos del Menu */
+.menuham{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient( 180deg,  rgba(5,84,94,1) 0%, #bbb 100% );
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
 .main-nav {
   opacity: 0;
   visibility: hidden;
@@ -118,7 +157,7 @@ img {
 
 .slider {
   display: flex;
-  width: 400%;
+  width: 900%;
   height: 300px;
   margin-left: -100%;
   position: relative;
@@ -138,11 +177,20 @@ img {
   width: 100%;
   position: relative;
 }
+.fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
 .slider__img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .slider__btn {
   position: absolute;
@@ -212,7 +260,7 @@ img {
   text-align: center;
   position: relative;
 }
-.product:before {
+/* .product:before {
   content: "New";
   background: #FF4E00;
   padding: 10px;
@@ -222,7 +270,7 @@ img {
   right: 10px;
   transform: rotate(-90deg);
   color: white;
-}
+} */
 
 .product__img{
   width: 100%;
@@ -322,40 +370,64 @@ img {
   color: white;
 }
 
-.main-footer{
-  background: #151515;
-  color: white;
-  padding: 30px 20px;
-}
-.footer__title{
-  border-bottom: 1px dotted #555;
-  padding-bottom: 20px;
-}
-.footer__txt {
-  color: #555;
-}
-.footer__link{
-  color: #555;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
-}
+/*Estilos para footer*/
 
-.footer__input{
-  background: #151515;
-  width: 100%;
-  display: block;
-  padding: 20px;
-  border: 1px solid #555;
-}
-.copy {
-  color: #555;
-}
+.main-footer{
+    background: teal;
+    color: #000;
+    margin-top: 15px;
+    padding: 30px 20px;
+  }
+  .footer__title{
+    border-bottom: 1px dotted #555;
+    padding-bottom: 20px;
+  }
+  .footer__txt {
+    color: #fff;
+  }
+  .footer__link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .footer__input{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555;
+  }
+  .copy {
+    color: #fff;
+  }
+  
+  .social-media-icon{
+      display: inline-block;
+      margin-left: 20px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+  }
+  
+  .social-media-icon:hover{
+      background: #fff;
+      color: teal;
+  }
+  
+  .social-media-icon i{
+      font-size: 30px;
+      line-height: 37px;
+  }
 
 /*Estilos para tablet*/
 @media screen and (min-width:768px) {
   .slider{
-    height: 400px;
+    height: 800px;
   }
   .editor__item{
     height: 250px;
@@ -375,9 +447,10 @@ img {
         box-shadow: 2px 2px 2px 2px #999;
         align-items: center;
         justify-content: center;
-        transform: translateX(15%);
     }
-
+    .slider{
+        height: 300px;
+      }
   .container{
     width: 1000px;
     margin: auto;
@@ -417,6 +490,7 @@ img {
     width: 130px;
     padding: 10px;
     margin-bottom: 20px;
+    transform: translateX(-50px);
   }
   .main-header__input{
     width: 85%;
@@ -479,8 +553,11 @@ img {
     font-size: 1.3em;
   }
   .slider{
-    height: 500px;
+    height: 400px;
     font-size: 1.5em;
+  }
+  .slider__img{
+      object-fit: cover;
   }
 }
 
@@ -495,7 +572,7 @@ img {
     font-size: 1.5em;
   }
   .slider{
-    height: 600px;
+    height: 500px;
   }
   .product__img {
     height: 200px;
