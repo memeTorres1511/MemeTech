@@ -6,6 +6,7 @@
     <title>ManuelTechnology</title>
     <link rel="stylesheet" href="css/cursos.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/sliderNew.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +37,37 @@
             </div>
         </div>
     </header>
-    <div class="slider-contenedor">
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/slide1.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Curso de PHP</h2>
+                    <p class="slider__txt">Aprovecha Promo... curso de PHP 50% off</p>
+                    <a href="#" class="btn-shop">COMPRA YA!</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img/slide2.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Curso de PHP</h2>
+                    <p class="slider__txt">Aprovecha Promo... curso de PHP 50% off</p>
+                    <a href="#" class="btn-shop">COMPRA YA!</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img/slide3.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Curso de PHP</h2>
+                    <p class="slider__txt">Aprovecha Promo... curso de PHP 50% off</p>
+                    <a href="#" class="btn-shop">COMPRA YA!</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    <!-- <div class="slider-contenedor">
         <div class="miSlider fade">
             <img src="img/slide1.jpg" alt="">
             <div class="slider__content">
@@ -70,7 +101,7 @@
             <span class="barra" onclick="posicionSlide(2)"></span>
             <span class="barra" onclick="posicionSlide(3)"></span>
         </div>
-    </div>
+    </div> -->
     <main class="main">
         <h2 class="main-title">Cursos</h2>
         <section class="container-cursos">
@@ -248,5 +279,6 @@
     <!-- <script src="js/menu.js"></script> -->
     <script src="js/cursos.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/sliderNew.js"></script>
 </body>
 </html>
