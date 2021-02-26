@@ -2,10 +2,249 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MemeTech</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/sliderNew.css">
+    <link rel="stylesheet" href="css/stilosListBox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>ManuelTechnology</title>
 </head>
 <body>
-    <h1>Pagina en construcci&oacute;n Desarrollo</h1>
+    <header class="main-header">
+        <div class="container container--flex">
+          <div class="main-header__container">
+            <h1 class="main-header__title"><img src="img/tec.png" alt="" class="main-header__img"></h1>
+            <img src="img/menuham.svg" alt="" class="menuham">
+            <nav class="menu-navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="login.html">Login</a>
+                <a href="#faqs">Shop</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <!-- <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+              <ul class="menu">
+                <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
+                <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+              </ul>
+            </nav> -->
+          </div>
+          <div class="main-header__container">
+            <span class="main-header__txt">¿Ayuda?</span>
+            <p class="main-header__txt"><i class="fab fa-whatsapp"></i> +503 77056045</p>
+          </div>
+          <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+            <a href="" class="main-header__btn">My cart <i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+          </div>
+        </div>
+      </header>
+      <div class="container-slider">
+        <div class="slider" id="slider">
+          <div class="slider__section fade">
+            <img src="img/slide1.jpg" alt="" class="slider__img fade">
+            <div class="slider__content">
+              <h2 class="slider__title">Curso de PHP</h2>
+              <p class="slider__txt">Aprovecha... 50% de descuento en Febrero</p>
+              <a href="" class="btn-shop">COMPRA AHORA!</a>
+            </div>
+          </div>
+          <div class="slider__section fade">
+            <img src="img/slide2.jpg" alt="" class="slider__img fade">
+            <div class="slider__content">
+              <h2 class="slider__title">Aprende Phyton</h2>
+              <p class="slider__txt">Aprovecha... 50% de descuento en Febrero</p>
+              <a href="" class="btn-shop">COMPRA AHORA!</a>
+            </div>
+          </div>
+          <div class="slider__section fade">
+            <img src="img/slide3.jpg" alt="" class="slider__img fade">
+            <div class="slider__content">
+              <h2 class="slider__title">Curso Java</h2>
+              <p class="slider__txt">Aprovecha... 50% de descuento en Febrero</p>
+              <a href="" class="btn-shop">COMPRA AHORA!</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+      </div>
+      <main class="main">
+        <div class="container">
+          <h2 class="main-title">Nuestro Servicio en Desarrollo</h2>
+          <br>
+          <h2 class="main-title__filter">Filtrar por:</h2>
+          <section class="container-listbox">
+            <div class="box">
+                <select>
+                  <option>Categor&iacute;a</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+              <div class="box">
+                <select>
+                  <option>Precio</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+          </section>
+          <section class="container-products">
+            <div class="product">
+              <img src="img/htmlcss.jpg" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Curso Pr&aacute;ctico de HTML y CSS</h3>
+                <span class="product__price">$50.00</span>
+              </div>
+              <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+              <img src="img/php.jpg" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Curso introductorio de PHP</h3>
+                <span class="product__price">$45.00</span>
+              </div>
+              <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+              <img src="img/react.png" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Curso Pr&aacute;ctico de REACT.js</h3>
+                <span class="product__price">$75.00</span>
+              </div>
+              <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+              <img src="img/seguridad.jpg" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Seguridad Inform&aacute;tica</h3>
+                <span class="product__price">$99.99</span>
+              </div>
+              <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/arduino-2168193_1920.png" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Curso Pr&aacute;ctico Arduino</h3>
+                  <span class="product__price">$75.95</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/celphone.svg" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Curso App M&oacute;viles</h3>
+                  <span class="product__price">$60.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/htmlcss.jpg" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">HTML desde Cero</h3>
+                  <span class="product__price">$50.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/php.jpg" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Curso Profesional de JavaScript</h3>
+                  <span class="product__price">$150.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+          </section>
+          <!-- <section class="container__testimonials">
+            <h2 class="section__title">Testimonials</h2>
+            <h3 class="testimonial__title">Anamaria </h3>
+            <p class="testimonial__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, perferendis, animi! Numquam quasi similique, fuga sint. Nulla veritatis quia nemo, magni, necessitatibus impedit inventore, provident culpa repellat esse a quo.</p>
+          </section>
+        
+          <div class="container-editor">
+            <div class="editor__item">
+              <img src="https://pixnio.com/free-images/2017/05/31/2017-05-31-10-27-12.jpg" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+            <div class="editor__item">
+              <img src="https://images.pexels.com/photos/261856/pexels-photo-261856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+          </div> -->
+          <!-- <section class="container-tips">
+            <div class="tip">
+              <i class="far fa-hand-paper"></i> 
+              <h2 class="tip__title">Satisfaction Guaranteed</h2>
+              <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+            <div class="tip">
+             <i class="fas fa-rocket"></i>
+              <h2 class="tip__title">Fast Shipping</h2>
+              <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+            <div class="tip">
+              <i class="fas fa-cog"></i>
+              <h2 class="tip__title">UV Protection</h2>
+              <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+          </section> -->
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="footer__section">
+          <h2 class="footer__title">ManuelTechnology</h2>
+          <p class="footer__txt">Somos expertos en todo lo relacionado a tecnolog&iacute;a</p>
+          <p class="footer__txt">&#169Todos los derechos Reservados</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Ubicaci&oacute;n :</h2>
+          <p class="footer__txt">Santa Ana, EL Salvador</p>
+          <h2 class="footer__title">Contacto</h2>
+          <a href="https://www.facebook.com/MemeTech-359832218391071" class="social-media-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="https://www.instagram.com/memetech_2021/" class="social-media-icon">
+            <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://wa.me/message/OGUU2IUBRDFFH1" class="social-media-icon">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+        <a href="https://mail.google.com/" class="social-media-icon">
+            <i class='bx bx-mail-send'></i>
+        </a>
+          <!-- <p class="footer__txt">Phone : +121 098 8907 9987</p>
+          <p class="footer__txt">Email : info@example.com</p> -->
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Atajos</h2>
+          <a href="index.html" class="footer__link">Inicio</a>
+          <a href="desarrollo.html" class="footer__link">Desarrollo</a>
+          <a href="venta.html" class="footer__link">Shop</a>
+          <a href="mantenimiento.html" class="footer__link">Mantenimiento</a>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Suscr&iacute;bete para recibir ofertas</h2>
+          <p class="footer__txt">Al suscribirte, te llegaran avisos de ofertas de ManuelTechnologies a tu E-mail</p>
+          <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        <p class="copy">© 2021 ManuelTechnology. Todos los Derechos Reservados | Design by Manuel Garc&iacute;a</p>
+      </footer>
+      <script src="js/sliderNew.js"></script>
+      <script src="js/menu.js"></script>
 </body>
 </html>
