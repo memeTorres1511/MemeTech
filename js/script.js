@@ -1,4 +1,4 @@
-const imagenes = document.querySelectorAll('.img-galeria')
+const imagenes = document.querySelectorAll('.product__img')
 const imagenesLight = document.querySelector('.agregar-imagen')
 const contenedorLight = document.querySelector('.imagen-light')
 const hamburguer1 = document.querySelector('.menuham');
