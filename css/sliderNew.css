@@ -248,7 +248,22 @@ img {
   background: #FF4E00;
   color: white;
 }
+
+/*Estilos buscador*/
+
+
 /* ESTILOS DE PRODUCTOS */
+.main-title__filter{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.main-title{
+    font-family: 'Open Sans', sans-serif;
+    color: teal;
+    text-align: center;
+}
 .container-products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
