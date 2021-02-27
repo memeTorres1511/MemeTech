@@ -614,7 +614,7 @@ img {
     font-size: 1.5em;
   }
   .slider__img{
-      object-fit: cover;
+      object-fit: contain;
   }
 }
 
