@@ -63,7 +63,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     top: 0;
     right: 0;
-    width: 60vw;
+    width: 30vw;
     height: 100%;
     background-image: linear-gradient( 180deg,  rgba(5,84,94,1) 0%, #bbb 100% );
     display: flex;

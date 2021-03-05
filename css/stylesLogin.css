@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../fonts/inconsolata.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
     margin: 0px;
     font-family: 'Muli', sans-serif;
@@ -19,6 +33,7 @@ body {
       justify-content: center;
       flex-direction: column;
       padding: 0px 30px;
+      padding-bottom: 40px;
       min-height: calc(100vh - 200px);
       font-family: 'Muli', sans-serif;
   }
@@ -29,7 +44,7 @@ body {
       color: white;
       padding: 60px 68px 40px;
       min-height: 700px;
-      width: 300px;
+      width: 400px;
       font-family: 'Muli', sans-serif;
       display: flex;
       justify-content: space-around;
@@ -119,23 +134,48 @@ body {
       letter-spacing: 1px;
       margin: 10px;
   }
-  .footer{
-      background-color: teal;
-      display: flex;
-      align-items: center;
-      height: 100px;
-      width: 100%;
-  }
-  .footer a{
-      color: white;
-      cursor: pointer;
-      font-size: 14px;
-      padding-left: 30px;
-      text-decoration: none;
-  }
-  .footer a:hover{
-      text-decoration: underline;
-  }
+
+  .menuham{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient( 180deg,  rgba(5,84,94,1) 0%, #bbb 100% );
+    /*background-image: -webkit-linear-gradient(180deg, #780206 0%, #061161 100%);*/
+    /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
   @media only screen and (max-width:600px){
       .login__container{
           background-color: transparent;
@@ -143,8 +183,13 @@ body {
           padding: 0px;
           width: 100%;
       }
-      .footer{
-          align-items: flex-start;
-          flex-direction: column;
-      }
+     
+      .menu-navegacion{
+        width: 65vw;
+    }
+
+    .menuham{
+        top: 20px;
+        right: 20px;
+    }
   }
