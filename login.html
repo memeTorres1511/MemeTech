@@ -1,38 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>Login</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-    <form class="form-signin">
-      <img class="mb-4" src="../MemeTech/img/neg2.JPG" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
-    </form>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesLogin.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <header>
+        <img class="header__img" src="./logo-platzi-video-BW2.png" alt="">
+    </header>
+    <section class="login">
+        <section class="login__container">
+            <h2>Iniciar Sesi&oacute;n</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" placeholder="Email">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesi&oacute;n</button>
+                <div class="login_container--remember-me">
+                    <label>
+                        <input type="checkbox" name="" id="cbox1" value="checkbox">Recu&eacute;rdame
+                    </label>
+                    <a href="/">Olvid&eacute; mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="./icons8-google-24.png" alt="google">Inicia Sesi&oacute;n con Google
+                </div>
+                <div>
+                    <img src="./icons8-twitter-24.png" alt="twitter">Inicia Sesi&oacute;n con Twitter
+                </div>
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="/">Registrate</a>
+            </p>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="/">T&eacute;rminos de uso</a>
+        <a href="/">Declaraci&oacute;n de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
 </html>
